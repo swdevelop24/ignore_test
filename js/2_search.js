@@ -68,7 +68,7 @@ function displayParks() {
         container.innerHTML += `
             <div class="park-card">
                 <span class="favorite-icon ${isFavorite ? 'active' : ''}" onclick="toggleFavorite(event, '${park.id}')">${isFavorite ? '❤️' : '🤍'}</span>
-                <img src="${park.images.length ? park.images[0].url : 'https://via.placeholder.com/200x150'}" onclick="window.location.href='3_detail.html?id=${park.id}'">
+                <img src="${park.images.length ? park.images[0].url : 'https://via.placeholder.com/200x150'}" onclick="window.location.href='../pages/3_detail.html?id=${park.id}'">
                 <h3>${park.fullName}</h3>
             </div>`;
     });
